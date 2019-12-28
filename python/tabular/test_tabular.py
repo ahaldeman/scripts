@@ -1,7 +1,6 @@
 import unittest
-from python.tabular.tabular import convert_to_table
-
-from python.tabular.tabular import Format
+from tabular import convert_to_table
+from tabular import Format
 
 
 class TabularTests(unittest.TestCase):
@@ -44,3 +43,6 @@ class TabularTests(unittest.TestCase):
             "========================="
 
         self.assertEqual(expected_table, convert_to_table(string, Format.CSV))
+
+if __name__ == '__main__':
+    unittest.main()
